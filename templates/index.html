@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<link rel="stylesheet" href="/static/css/style.css">
+<script src="/static/js/index.js" defer></script>
+{% endblock %}
+
+{% block body %}
+<div class="index">
+<h1>Template Rendered by Jinja2</h1>
+<ul>
+    {% for name in names %}
+    <li>{{ name }}</li>
+    {% endfor %}
+</ul>
+<a href="/about">About US</a>
+
+</div>
+<br>
+Number1:  <input type="number" id="num1"> <br><br>
+Number2:  <input type="number" id="num2"> <br><br>
+<button id="add">+</button>
+<button id="sub">-</button>
+<button id="div">/</button>
+<button id="mul">*</button> <br><br>
+<span id="result"></span>
+{% endblock %}
+

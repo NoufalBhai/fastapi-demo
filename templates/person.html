@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+{% block style %}
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+{% endblock %}
+
+
+{% block body %}
+<main class="bordered">
+    <form action="" method="post">
+        <section>
+            <label for="">Name: </label>
+            <input type="text" id="name" name="name">
+        </section>
+        <section>
+            <label for="">Age: </label>
+            <input type="number" id="age" name="age">
+        </section>
+        <section>
+            <label for="">Email: </label>
+            <input type="email" id="email" name="email">
+        </section>
+        <section>
+            <button>Submit</button>
+        </section>
+    </form>
+</main>
+{% endblock %}

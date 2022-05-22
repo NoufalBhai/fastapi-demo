@@ -7,3 +7,22 @@
 .about {
     background-color: rgb(51, 114, 127);
 }
+
+.bordered {
+    padding: 10px;
+    border: 1px solid rgb(34, 117, 176);
+    border-radius: 25px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.bordered section {
+    margin-bottom: 5px;
+}
+
+.bordered section label {
+    display: inline-block;
+    width: 25%;
+}
